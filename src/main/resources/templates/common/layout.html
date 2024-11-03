@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head xmlns:th="http://www.thymeleaf.org" th:fragment="head_fragment(title, scripts, links)">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${title}"></title>
+	<!-- 全画面共通のcssを定義します -->
+	  <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}"/>
+	  <!-- 各画面専用のcssを定義します -->
+<!--	  <th:block th:replace="${links}" />-->
+</head>
+<body>
+    
+    <!-- メニューバー -->
+<!--    <th:block th:replace="components/navbar :: navbar"></th:block>-->
+    
+    <!-- コンテンツ -->
+<!--    <main role="main" class="container">-->
+<!--        <th:block th:replace="${content}"></th:block>-->
+<!--    </main>-->
+    
+    <!-- フッター -->
+<!--    <th:block th:replace="components/footer :: footer"></th:block>-->
+
+	<!-- 全画面共通のjavascriptを定義します -->
+	<script type="text/javascript" th:src="@{/scripts/bootstrap.min.js}"></script>
+	<!-- 各画面専用のjavascriptを定義します -->
+<!--	<th:block th:replace="${scripts}" />-->
+</body>
+</html>
