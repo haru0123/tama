@@ -3,7 +3,7 @@
 ## 使用技術
 - IDE  : eclipse
 - Lang : Java (Spring Boot)
-- DB : Oracle（予定）
+- DB : ~~Oracle~~ MySQL
 
 
 ## プロジェクトのセットアップ手順
